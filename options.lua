@@ -17,6 +17,16 @@ return {
     icons_enabled = true, -- disable icons in the UI (disable if no nerd font is available, requires :PackerSync after changing)
     ui_notifications_enabled = true, -- disable notifications when toggling UI elements
     resession_enabled = false, -- enable experimental resession.nvim session management (will be default in AstroNvim v4)
+    neovide_transparency = 0.24,
+    neovide_transparency_point = 0.8,
+    neovide_cursor_antialiasing = false,
+    neovide_cursor_animation_length = 0,
+    neovide_background_color = "1e1e1e",
+    neovide_remember_window_size = true,
+    neovide_input_macos_alt_is_meta = true,
+    splitjoin_split_mapping = "",
+    splitjoin_join_mapping = "",
+    camelcasemotion_key = "<leader>"
   },
 }
 -- If you need more control, you can use the function()...end notation

@@ -27,6 +27,10 @@ return {
   },
 
   lsp = {
+    setup_handlers = {
+      -- add custom handler
+      tsserver = function(_, opts) require("typescript").setup { server = opts } end,
+    },
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
@@ -51,6 +55,15 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+    },
+    plugins = {
+      "jose-elias-alvarez/typescript.nvim", -- add lsp plugin
+      {
+        "williamboman/mason-lspconfig.nvim",
+        opts = {
+          ensure_installed = { "tsserver" }, -- automatically install lsp
+        },
+      },
     },
   },
 
