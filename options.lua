@@ -7,6 +7,7 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    showtabline = 0,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
@@ -26,7 +27,7 @@ return {
     neovide_input_macos_alt_is_meta = true,
     splitjoin_split_mapping = "",
     splitjoin_join_mapping = "",
-    camelcasemotion_key = "<leader>"
+    camelcasemotion_key = "<leader>",
   },
 }
 -- If you need more control, you can use the function()...end notation

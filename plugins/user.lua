@@ -38,9 +38,4 @@ return {
   {
     "semanticart/ruby-code-actions.nvim",
   },
-  {
-    "Pocco81/auto-save.nvim",
-    lazy = false,
-    opts = {}
-  },
 }

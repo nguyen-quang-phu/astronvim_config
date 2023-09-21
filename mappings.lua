@@ -29,12 +29,30 @@ return {
     },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
-    ["<leader>b"] = { name = "Buffers" },
+    -- ["<leader>b"] = { name = "Buffers" },
+    ["<leader>e"] = { "<cmd>Neotree focus<cr>" },
+    ["<leader>b"] = { "<cmd>Neotree toggle<cr>" },
+    ["<D-f>"] = { "<cmd>lua vim.lsp.buf.format{async=true}<cr><cmd> w <CR>" },
+    ["<D-p>"] = { "<cmd>Telescope find_files hidden=true no_ignore=true<cr>" },
+    ["<S-D-f>"] = { "<cmd>Telescope live_grep hidden=true no_ignore=true<cr>" },
+    ["<D-.>"] = { "<Cmd>Lspsaga code_action<Cr>" },
+    ["gd"] = { "<Cmd>Lspsaga goto_definition<CR>" },
+    ["gr"] = { "<Plug>ReplaceWithRegisterOperator" },
+    ["grr"] = { "<Plug>ReplaceWithRegisterLine" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+  },
+  i = {
+    ["<D-v>"] = { "<c-r>+" },
+  },
+  c = {
+    ["<D-v>"] = { "<c-r>+" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  v = {
+    ["gr"] = { "<Plug>ReplaceWithRegisterVisual", desc = "ReplaceWithRegisterVisual" },
   },
 }

@@ -18,7 +18,7 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "vscode",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
@@ -29,13 +29,13 @@ return {
   lsp = {
     setup_handlers = {
       -- add custom handler
-      tsserver = function(_, opts) require("typescript").setup { server = opts } end,
+      -- tsserver = function(_, opts) require("typescript").setup { server = opts } end,
     },
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
       format_on_save = {
-        enabled = true, -- enable or disable format on save globally
+        enabled = false, -- enable or disable format on save globally
         allow_filetypes = { -- enable format on save for specified filetypes only
           -- "go",
         },
@@ -54,15 +54,14 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
-      -- "pyright"
+      "pyright",
+      "solargraph",
+      "tsserver",
     },
-    plugins = {
-      "jose-elias-alvarez/typescript.nvim", -- add lsp plugin
-      {
-        "williamboman/mason-lspconfig.nvim",
-        opts = {
-          ensure_installed = { "tsserver" }, -- automatically install lsp
-        },
+    mappings = {
+      n = {
+        ["gr"] = false,
+        ["gd"] = false,
       },
     },
   },
@@ -95,4 +94,23 @@ return {
     --   },
     -- }
   end,
+  plugins={
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      filesystem = {
+        filtered_items = {
+	        visible = true,
+	        show_hidden_count = true,
+	        hide_dotfiles = false,
+	        hide_gitignored = true,
+	        hide_by_name = {
+	          -- '.git',
+	          -- '.DS_Store',
+	          -- 'thumbs.db',
+	        },
+	        never_show = {},
+        },
+      }
+    }
+  }
 }

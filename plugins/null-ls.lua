@@ -7,7 +7,7 @@ return {
     local formatting = require("null-ls").builtins.formatting
     local code_actions = require("null-ls").builtins.code_actions
     local methods = require("null-ls").methods
-    local ruby_code_actions = require("ruby-code-actions")
+    local ruby_code_actions = require "ruby-code-actions"
 
     -- Check supported formatters and linters
     -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
