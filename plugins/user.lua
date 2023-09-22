@@ -38,4 +38,21 @@ return {
   {
     "semanticart/ruby-code-actions.nvim",
   },
+  {
+    "bkad/CamelCaseMotion",
+    lazy = false,
+  },
+  {
+    "tpope/vim-abolish",
+    lazy = false,
+  },
+  {
+    "axelvc/template-string.nvim",
+    opts={},
+    lazy = false,
+  },
+  {
+    "AndrewRadev/switch.vim",
+    lazy = false,
+  },
 }
