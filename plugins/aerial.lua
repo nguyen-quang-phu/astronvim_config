@@ -43,7 +43,7 @@ return {
     use_treesitter = true,
     char = "▏",
     context_char = "▏",
-    open_automatic = true,
+    open_automatic = false,
     show_current_context = true,
   }
 }

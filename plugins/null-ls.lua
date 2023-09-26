@@ -37,17 +37,17 @@ return {
       },
 
       -- ruby
-      diagnostics.rubocop.with {
-        command = "bundle",
-        args = vim.list_extend({ "exec", "rubocop" }, diagnostics.rubocop._opts.args),
-
-        diagnostics_format = "[rubocop] #{m}\n(#{c})",
-        methods = methods.DIAGNOSTICS_ON_SAVE,
-      },
-      formatting.rubocop.with {
-        command = "bundle",
-        args = vim.list_extend({ "exec", "rubocop", "--auto-correct" }, formatting.rubocop._opts.args),
-      },
+      -- diagnostics.rubocop.with {
+      --   command = "bundle",
+      --   args = vim.list_extend({ "exec", "rubocop" }, diagnostics.rubocop._opts.args),
+      --
+      --   diagnostics_format = "[rubocop] #{m}\n(#{c})",
+      --   methods = methods.DIAGNOSTICS_ON_SAVE,
+      -- },
+      -- formatting.rubocop.with {
+      --   command = "bundle",
+      --   args = vim.list_extend({ "exec", "rubocop", "--auto-correct" }, formatting.rubocop._opts.args),
+      -- },
       ruby_code_actions.insert_frozen_string_literal,
       ruby_code_actions.autocorrect_with_rubocop,
 

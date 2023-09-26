@@ -11,6 +11,12 @@ return {
 
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.markdown" },
+  -- { import = "astrocommunity.pack.ruby" },
 
   { import = "astrocommunity.editing-support.auto-save-nvim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
@@ -24,5 +30,7 @@ return {
   { import = "astrocommunity.motion.mini-move" },
 
   { import = "astrocommunity.git.git-blame-nvim" },
+  { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
+  { import = "astrocommunity.lsp.lsp-signature-nvim" },
 
 }

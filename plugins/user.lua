@@ -55,4 +55,13 @@ return {
     "AndrewRadev/switch.vim",
     lazy = false,
   },
+  {
+    "tpope/vim-rbenv",
+    lazy = false,
+  },
+  -- {
+  --   'mihyaeru21/nvim-lspconfig-bundler',
+  --   dependencies = { "neovim/nvim-lspconfig" },
+  --
+  -- }
 }
