@@ -16,21 +16,38 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.full-dadbod" },
   -- { import = "astrocommunity.pack.ruby" },
 
   { import = "astrocommunity.editing-support.auto-save-nvim" },
   { import = "astrocommunity.editing-support.nvim-treesitter-endwise" },
   { import = "astrocommunity.editing-support.treesj" },
   { import = "astrocommunity.editing-support.dial-nvim" },
+  { import = "astrocommunity.editing-support.hypersonic-nvim" },
+  -- { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
 
   { import = "astrocommunity.workflow.hardtime-nvim" },
 
-  { import = "astrocommunity.motion.hop-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.motion.mini-move" },
-
+  { import = "astrocommunity.motion.mini-ai" },
+  { import = "astrocommunity.motion.nvim-spider" },
+  { import = "astrocommunity.motion.flash-nvim" },
+  -- { import = "astrocommunity.motion.mini-bracketed" },
+  {
+    "folke/flash.nvim",
+    opts = {
+      modes = {
+        char = {
+          jump_labels = true,
+        },
+      },
+    },
+  },
   { import = "astrocommunity.git.git-blame-nvim" },
-  { import = "astrocommunity.diagnostics.lsp_lines-nvim" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
-
+  { import = "astrocommunity.comment.mini-comment" },
+  { import = "astrocommunity.syntax.vim-easy-align" },
+  { import = "astrocommunity.utility.noice-nvim" },
 }

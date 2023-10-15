@@ -28,6 +28,8 @@ return {
     splitjoin_split_mapping = "",
     splitjoin_join_mapping = "",
     camelcasemotion_key = "<leader>",
+    ["test#strategy"] = "neovim",
+    ["test#neovim#start_normal"] = true,
   },
 }
 -- If you need more control, you can use the function()...end notation

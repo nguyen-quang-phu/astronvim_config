@@ -48,7 +48,7 @@ return {
   },
   {
     "axelvc/template-string.nvim",
-    opts={},
+    opts = {},
     lazy = false,
   },
   {
@@ -59,9 +59,24 @@ return {
     "tpope/vim-rbenv",
     lazy = false,
   },
-  -- {
-  --   'mihyaeru21/nvim-lspconfig-bundler',
-  --   dependencies = { "neovim/nvim-lspconfig" },
-  --
-  -- }
+  {
+    "vim-test/vim-test",
+    lazy = false,
+  },
+  {
+    "michaeljsmith/vim-indent-object",
+    lazy = false,
+  },
+  {
+    "cbochs/portal.nvim",
+    cmd = "Portal",
+    opts = {},
+    keys = {
+      { "<C-o>", "<cmd>Portal jumplist backward<cr>", desc = "Portal Jump backward" },
+      { "<C-i>", "<cmd>Portal jumplist forward<cr>", desc = "Portal Jump forward" },
+    },
+  },  {
+    "AndrewRadev/splitjoin.vim",
+    lazy = false,
+  },
 }
