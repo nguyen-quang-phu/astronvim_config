@@ -43,6 +43,7 @@ return {
     ["gS"] = { "<cmd>SplitjoinSplit<CR><cr>" },
     ["gJ"] = { "<cmd>SplitjoinJoin<CR><cr>" },
     ["<C-g>"] = { "<cmd>let @+=expand('%:p')<cr>" },
+    ["<leader>rc"] = { "<cmd>lua require('ror.commands').list_commands()<CR>" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
