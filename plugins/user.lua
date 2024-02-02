@@ -132,6 +132,6 @@ return {
     lazy = false,
   },
   { "rgroli/other.nvim", lazy = false },
-
+  { "beloglazov/vim-textobj-quotes", lazy = false, dependencies = { "kana/vim-textobj-user" } },
   -- lazy.nvim
 }

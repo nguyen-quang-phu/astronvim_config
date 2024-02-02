@@ -6,7 +6,7 @@ return {
 
   { import = "astrocommunity.colorscheme.vscode-nvim" },
 
-  { import = "astrocommunity.completion.codeium-vim" },
+  -- { import = "astrocommunity.completion.codeium-vim" },
   { import = "astrocommunity.completion.cmp-cmdline" },
 
   { import = "astrocommunity.pack.yaml" },
