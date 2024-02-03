@@ -12,7 +12,6 @@ return {
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
     showtabline = 0,
-    formatoptions = "jqlnt",
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
@@ -40,6 +39,7 @@ return {
     -- transparency = 0.8,
     -- neovide_background_color = "#0f1117" .. alpha(),
   },
+
 }
 -- If you need more control, you can use the function()...end notation
 -- return function(local_vim)
