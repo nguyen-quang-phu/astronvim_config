@@ -56,6 +56,7 @@ return {
     servers = {
       "pyright",
       "solargraph",
+      "sorbet",
       "tsserver",
       -- "phpfactor",
     },
