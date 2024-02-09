@@ -50,7 +50,8 @@ return {
   { import = "astrocommunity.editing-support.hypersonic-nvim" },
   { import = "astrocommunity.editing-support.comment-box-nvim" },
   { import = "astrocommunity.editing-support.wildfire-nvim" },
-  -- { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
+  { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
+  { import = "astrocommunity.editing-support.refactoring-nvim" },
 
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
 
@@ -87,7 +88,7 @@ return {
     },
   },
   { import = "astrocommunity.syntax.vim-easy-align" },
-  -- { import = "astrocommunity.debugging.nvim-dap-repl-highlights" },
+  { import = "astrocommunity.debugging.nvim-chainsaw" },
   -- { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   -- { import = "astrocommunity.debugging.persistent-breakpoints-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },

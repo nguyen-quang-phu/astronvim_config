@@ -44,6 +44,9 @@ return {
     ["gJ"] = { "<cmd>SplitjoinJoin<CR><cr>" },
     ["<C-g>"] = { "<cmd>let @+=expand('%:p')<cr>" },
     ["<leader>rr"] = { "<cmd>lua require('ror.commands').list_commands()<CR>" },
+    [",l"] = { "<cmd>lua require('chainsaw').variableLog()<CR>" },
+    [",d"] = { "<cmd>lua require('chainsaw').removeLogs()<CR>" },
+    [",L"] = { "<cmd>lua require('chainsaw').messageLog()<CR>" },
 
     -- quick sav
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
