@@ -64,6 +64,7 @@ return {
       n = {
         ["gr"] = false,
         ["gd"] = false,
+        ["<leader>la"] = false,
       },
     },
   },

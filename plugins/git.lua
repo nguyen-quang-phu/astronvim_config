@@ -20,4 +20,8 @@ return {
     optional = true,
     opts = { integrations = { diffview = true } },
   },
+  {
+    "f-person/git-blame.nvim",
+    event = "User AstroGitFile",
+  },
 }

@@ -35,7 +35,7 @@ return {
     ["<S-D-f>"] = { "<cmd>Telescope live_grep hidden=true no_ignore=true<cr>" },
     ["<D-f>"] = { "<cmd>lua vim.lsp.buf.format{async=true}<cr><cmd> w <CR>" },
     ["<D-p>"] = { "<cmd>Telescope find_files hidden=true no_ignore=true<cr>" },
-    ["<D-.>"] = { "<Cmd>Lspsaga code_action<Cr>" },
+    ["<leader>la"] = { "<Cmd>Lspsaga code_action<Cr>" },
     ["gd"] = { "<Cmd>Lspsaga goto_definition<CR>" },
     ["gr"] = { "<Plug>ReplaceWithRegisterOperator" },
     ["grr"] = { "<Plug>ReplaceWithRegisterLine" },

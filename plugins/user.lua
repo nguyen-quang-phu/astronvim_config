@@ -1,33 +1,9 @@
 -- TODO: Test
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
-  {
-    "kana/vim-textobj-entire",
-    lazy = false,
-    dependencies = { { "kana/vim-textobj-user" } },
-  },
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    },
     event = "User AstroFile",
-  },
-  {
-    "vim-scripts/ReplaceWithRegister",
-    lazy = false,
   },
   -- ruby
   -- {
@@ -35,17 +11,8 @@ return {
   --   lazy = false,
   --   dependencies = { { "tpope/vim-dispatch", "tpope/vim-projectionist", "noahfrederick/vim-composer" } },
   -- },
-  {
-    "bkad/CamelCaseMotion",
-    lazy = false,
-  },
-  {
+    {
     "tpope/vim-abolish",
-    lazy = false,
-  },
-  {
-    "axelvc/template-string.nvim",
-    opts = {},
     lazy = false,
   },
   {
@@ -58,10 +25,6 @@ return {
   },
   {
     "vim-test/vim-test",
-    lazy = false,
-  },
-  {
-    "michaeljsmith/vim-indent-object",
     lazy = false,
   },
   {
@@ -92,29 +55,6 @@ return {
     },
   },
   { "otavioschwanck/new-file-template.nvim", opts = {}, lazy = false },
-  {
-    "otavioschwanck/arrow.nvim",
-    opts = {
-      always_show_path = false,
-      show_icons = true,
-      mappings = {
-        edit = "e",
-        delete_mode = "d",
-        clear_all_items = "C",
-        toggle = "s",
-        open_vertical = "v",
-        open_horizontal = "-",
-        quit = "q",
-      },
-      leader_key = ";",
-      after_9_keys = "zxcbnmZXVBNM,afghjklAFGHJKLwrtyuiopWRTYUIOP", -- Please, don't pin more then 9 XD,
-      save_key = function()
-        return vim.loop.cwd() -- we use the cwd as the context from the bookmarks.  You can change it for anything you want.
-      end,
-      full_path_list = { "update_stuff" }, -- filenames on this list will ALWAYS show the file path too.
-    },
-    lazy = false,
-  },
   { "rgroli/other.nvim", lazy = false },
   { "beloglazov/vim-textobj-quotes", lazy = false, dependencies = { "kana/vim-textobj-user" } },
   -- lazy.nvim
