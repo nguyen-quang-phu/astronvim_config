@@ -47,6 +47,11 @@ return {
     [",l"] = { "<cmd>lua require('chainsaw').variableLog()<CR>" },
     [",d"] = { "<cmd>lua require('chainsaw').removeLogs()<CR>" },
     [",L"] = { "<cmd>lua require('chainsaw').messageLog()<CR>" },
+    ["<leader>oo"] = { "<cmd>:Other<CR>" },
+    ["<leader>os"] = { "<cmd>:OtherSplit<CR>" },
+    ["<leader>ov"] = { "<cmd>:OtherVSplit<CR>" },
+    ["<leader>ot"] = { "<cmd>:OtherTabNew<CR>" },
+    ["<leader>oc"] = { "<cmd>:OtherClear<CR>" },
 
     -- quick sav
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command

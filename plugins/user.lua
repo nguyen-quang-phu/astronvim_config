@@ -55,7 +55,25 @@ return {
     },
   },
   { "otavioschwanck/new-file-template.nvim", opts = {}, lazy = false },
-  { "rgroli/other.nvim", lazy = false },
+{
+    "kawre/leetcode.nvim",
+    build = ":TSUpdate html",
+    lazy = false,
+    dependencies = {
+        "nvim-telescope/telescope.nvim",
+        "nvim-lua/plenary.nvim", -- required by telescope
+        "MunifTanjim/nui.nvim",
+
+        -- optional
+        "nvim-treesitter/nvim-treesitter",
+        "rcarriga/nvim-notify",
+        "nvim-tree/nvim-web-devicons",
+    },
+    opts = {
+      lang = 'golang'
+        -- configuration goes here
+    },
+},
   { "beloglazov/vim-textobj-quotes", lazy = false, dependencies = { "kana/vim-textobj-user" } },
   -- lazy.nvim
 }

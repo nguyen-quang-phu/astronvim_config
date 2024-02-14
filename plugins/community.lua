@@ -41,6 +41,7 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.full-dadbod" },
   { import = "astrocommunity.pack.php" },
+  { import = "astrocommunity.pack.python" },
   -- { import = "astrocommunity.pack.ruby" },
 
   { import = "astrocommunity.editing-support.auto-save-nvim" },
@@ -56,7 +57,6 @@ return {
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
 
   { import = "astrocommunity.motion.nvim-surround" },
-  { import = "astrocommunity.motion.mini-ai" },
   { import = "astrocommunity.motion.nvim-spider" },
   { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.motion.vim-matchup" },
