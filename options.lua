@@ -13,6 +13,7 @@ return {
     wrap = false, -- sets vim.opt.wrap
     showtabline = 0,
     swapfile = false,
+    eof = true,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
