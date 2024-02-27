@@ -65,6 +65,8 @@ return {
         ["gr"] = false,
         ["gd"] = false,
         ["<leader>la"] = false,
+        ["<leader>ld"] = false,
+        ["<leader>lD"] = false,
       },
     },
   },

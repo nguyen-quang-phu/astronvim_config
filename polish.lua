@@ -18,7 +18,6 @@ return function()
   --     end
   --   end,
   -- })
-
   vim.api.nvim_create_autocmd(
     "BufEnter",
     { callback = function() vim.opt.formatoptions = vim.opt.formatoptions - { "c", "r", "o" } end }
@@ -30,6 +29,63 @@ return function()
       if last_nonblank < n_lines then vim.api.nvim_buf_set_lines(0, last_nonblank, n_lines, true, { "" }) end
     end,
   })
+
+  vim.cmd [[
+    function TermStrategy(cmd)
+      lua require("tmux-awesome-manager").execute_command({ cmd = vim.api.nvim_eval("a:cmd"), name = "Tests...", open_as = 'pane', size = '25%'})
+    endfunction
+     function AddDebugger()
+      let buftype = getbufvar('', '&filetype', 'ERROR')
+
+      if buftype == "ruby"
+        execute "norm O" . g:ruby_debugger
+      endif
+
+      if buftype == "eruby"
+        execute "norm O<% " . g:ruby_debugger . " %>"
+      endif
+
+      if buftype == "javascript" || buftype == "javascriptreact" || buftype == "typescript" || buftype == "typescriptreact"
+        echo "j = down. k = up: "
+        let direction = nr2char(getchar())
+
+        execute 'norm 0\"dY'
+
+        call setreg("d", substitute(getreg("d"), "'", "\\\\'", "g"))
+
+        if direction == "j"
+          execute "norm! oconsole.log('DEBUGGER', '\<esc>\"dpa', );\<esc>h"
+          execute "startinsert"
+        elseif direction == "k"
+          execute "norm! Oconsole.log('DEBUGGER', '\<esc>\"dpa', );\<esc>h"
+          execute "startinsert"
+        else
+          lua require('vim-notify')('Wrong Direction!', 'error', { title = 'mooD' })
+        end
+      else
+        write
+        execute "stopinsert"
+      endif
+    endfunction
+
+    function ClearDebugger()
+      let buftype = getbufvar('', '&filetype', 'ERROR')
+
+      if buftype == "ruby"
+        execute "%s/.*" . g:ruby_debugger . "\\n//gre"
+      endif
+
+      if buftype == "javascript" || buftype == "javascriptreact" || buftype == "typescript" || buftype == "typescriptreact"
+        execute "%s/.*console.log(\\_.\\{-\\});\\n//gre"
+      endif
+
+      if buftype == "eruby"
+        execute "%s/.*<% " . g:ruby_debugger . " %>\\n//gre"
+      endif
+      write
+    endfunction
+  ]]
+  vim.cmd "let g:test#custom_strategies = {'mood-term': function('TermStrategy')}"
 
   -- Set up custom filetypes
   -- vim.filetype.add {

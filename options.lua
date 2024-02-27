@@ -35,8 +35,9 @@ return {
     splitjoin_split_mapping = "",
     splitjoin_join_mapping = "",
     camelcasemotion_key = "<leader>",
-    ["test#strategy"] = "neovim",
+    ["test#strategy"] = "mood-term",
     ["test#neovim#start_normal"] = true,
+    ruby_debugger = "binding.pry"
     -- neovide_transparency = 0.0,
     -- transparency = 0.8,
     -- neovide_background_color = "#0f1117" .. alpha(),

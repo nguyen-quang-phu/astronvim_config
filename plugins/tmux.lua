@@ -8,6 +8,7 @@ return {
       local wk = require "which-key"
 
       wk.register({
+
         l = {
           r = {
             name = "+rails",
@@ -25,34 +26,6 @@ return {
               close_on_timer = 2,
               visit_first_call = false,
               focus_when_call = false,
-            },
-            g = tmux_term.run_wk {
-              cmd = "rails generate %1",
-              name = "Rails Generate",
-              questions = {
-                {
-                  question = "Rails generate: ",
-                  required = true,
-                  open_as = "pane",
-                  close_on_timer = 4,
-                  visit_first_call = false,
-                  focus_when_call = false,
-                },
-              },
-            },
-            d = tmux_term.run_wk {
-              cmd = "rails destroy %1",
-              name = "Rails Destroy",
-              questions = {
-                {
-                  question = "Rails destroy: ",
-                  required = true,
-                  open_as = "pane",
-                  close_on_timer = 4,
-                  visit_first_call = false,
-                  focus_when_call = false,
-                },
-              },
             },
           },
         },

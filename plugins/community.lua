@@ -62,6 +62,7 @@ return {
   { import = "astrocommunity.motion.vim-matchup" },
   { import = "astrocommunity.motion.marks-nvim" },
   { import = "astrocommunity.motion.tabout-nvim" },
+  { import = "astrocommunity.motion.mini-basics" },
   -- { import = "astrocommunity.motion.mini-bracketed" },
   {
     "folke/flash.nvim",
@@ -76,17 +77,6 @@ return {
   -- { import = "astrocommunity.git.git-blame-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   -- { import = "astrocommunity.lsp.lsp-signature-nvim" },
-  { import = "astrocommunity.comment.mini-comment" },
-  {
-    "echasnovski/mini.comment",
-    opts = {
-      options = {
-        custom_commentstring = function()
-          return require("ts_context_commentstring.internal").calculate_commentstring() or vim.bo.commentstring
-        end,
-      },
-    },
-  },
   { import = "astrocommunity.syntax.vim-easy-align" },
   { import = "astrocommunity.debugging.nvim-chainsaw" },
   -- { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
