@@ -53,6 +53,7 @@ return {
   { import = "astrocommunity.editing-support.wildfire-nvim" },
   { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
+  { import = "astrocommunity.editing-support.telescope-undo-nvim" },
 
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
 
