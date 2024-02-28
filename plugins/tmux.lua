@@ -17,6 +17,13 @@ return {
               name = "Rails Server",
               open_as = "window",
             },
+            d = {
+              m = tmux_term.run_wk {
+                cmd = "mycli -u root",
+                name = "MySQL",
+                open_as = "window",
+              },
+            },
             c = tmux_term.run_wk { cmd = "rails c", name = "Rails Console", open_as = "pane", size = "25%" },
             m = tmux_term.run_wk { cmd = "rails db:migrate", name = "Rails Migrate", open_as = "pane", size = "25%" },
             i = tmux_term.run_wk {

@@ -37,7 +37,8 @@ return {
     camelcasemotion_key = "<leader>",
     ["test#strategy"] = "mood-term",
     ["test#neovim#start_normal"] = true,
-    ruby_debugger = "binding.pry"
+    ruby_debugger = "binding.pry",
+    spotify_token = "ZjkyNzMzM2RjOWU1NDRiZjhiOGQ4Y2NhMDE2YjJlMWE6YzNkYTZiODEwMjEzNGNjYzkwMTdjOGIwZjY0YWI4MjQ="
     -- neovide_transparency = 0.0,
     -- transparency = 0.8,
     -- neovide_background_color = "#0f1117" .. alpha(),
