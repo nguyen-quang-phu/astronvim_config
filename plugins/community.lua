@@ -54,6 +54,8 @@ return {
   { import = "astrocommunity.editing-support.ultimate-autopair-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.editing-support.telescope-undo-nvim" },
+  { import = "astrocommunity.editing-support.zen-mode-nvim" },
+  { import = "astrocommunity.editing-support.cutlass-nvim" },
 
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
 
@@ -76,6 +78,9 @@ return {
     },
   },
   -- { import = "astrocommunity.git.git-blame-nvim" },
+  { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
+  { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
+  { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   -- { import = "astrocommunity.lsp.lsp-signature-nvim" },
   { import = "astrocommunity.syntax.vim-easy-align" },

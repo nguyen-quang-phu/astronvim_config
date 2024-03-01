@@ -11,7 +11,7 @@ return {
   --   lazy = false,
   --   dependencies = { { "tpope/vim-dispatch", "tpope/vim-projectionist", "noahfrederick/vim-composer" } },
   -- },
-    {
+  {
     "tpope/vim-abolish",
     lazy = false,
   },
@@ -55,25 +55,26 @@ return {
     },
   },
   { "otavioschwanck/new-file-template.nvim", opts = {}, lazy = false },
-{
+  {
     "kawre/leetcode.nvim",
     build = ":TSUpdate html",
     lazy = false,
     dependencies = {
-        "nvim-telescope/telescope.nvim",
-        "nvim-lua/plenary.nvim", -- required by telescope
-        "MunifTanjim/nui.nvim",
+      "nvim-telescope/telescope.nvim",
+      "nvim-lua/plenary.nvim", -- required by telescope
+      "MunifTanjim/nui.nvim",
 
-        -- optional
-        "nvim-treesitter/nvim-treesitter",
-        "rcarriga/nvim-notify",
-        "nvim-tree/nvim-web-devicons",
+      -- optional
+      "nvim-treesitter/nvim-treesitter",
+      "rcarriga/nvim-notify",
+      "nvim-tree/nvim-web-devicons",
     },
     opts = {
-      lang = 'golang'
-        -- configuration goes here
+      lang = "golang",
+      -- configuration goes here
     },
-},
+  },
   { "beloglazov/vim-textobj-quotes", lazy = false, dependencies = { "kana/vim-textobj-user" } },
+  { "AndrewRadev/rails_extra.vim", lazy = false },
   -- lazy.nvim
 }
