@@ -11,6 +11,7 @@ return {
 
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.tailwindcss" },
   {
     "williamboman/mason-lspconfig.nvim",
     opts = function(_, opts)

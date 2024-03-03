@@ -76,5 +76,6 @@ return {
   },
   { "beloglazov/vim-textobj-quotes", lazy = false, dependencies = { "kana/vim-textobj-user" } },
   { "AndrewRadev/rails_extra.vim", lazy = false },
+  { "posva/vim-vue", lazy = false },
   -- lazy.nvim
 }

@@ -58,6 +58,7 @@ return {
       "solargraph",
       "sorbet",
       "tsserver",
+      "volar",
       -- "phpfactor",
     },
     mappings = {
