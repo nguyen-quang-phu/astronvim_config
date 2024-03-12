@@ -56,7 +56,6 @@ return {
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.editing-support.telescope-undo-nvim" },
   { import = "astrocommunity.editing-support.zen-mode-nvim" },
-  { import = "astrocommunity.editing-support.cutlass-nvim" },
 
   -- { import = "astrocommunity.workflow.hardtime-nvim" },
 
@@ -67,6 +66,7 @@ return {
   { import = "astrocommunity.motion.marks-nvim" },
   { import = "astrocommunity.motion.tabout-nvim" },
   { import = "astrocommunity.motion.mini-basics" },
+  { import = "astrocommunity.motion.mini-move" },
   -- { import = "astrocommunity.motion.mini-bracketed" },
   {
     "folke/flash.nvim",
