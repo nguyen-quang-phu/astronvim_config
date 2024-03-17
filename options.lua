@@ -14,6 +14,8 @@ return {
     showtabline = 0,
     swapfile = false,
     eof = true,
+    cursorcolumn = true,
+    cursorline = true,
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader

@@ -55,6 +55,14 @@ return {
     ["<leader>ov"] = { "<cmd>:OtherVSplit<CR>" },
     ["<leader>ot"] = { "<cmd>:OtherTabNew<CR>" },
     ["<leader>oc"] = { "<cmd>:OtherClear<CR>" },
+    ["<leader>tt"] = false,
+    ["<leader>tT"] = false,
+    ["<leader>tr"] = false,
+    ["<leader>tl"] = false,
+    ["<leader>ts"] = false,
+    ["<leader>to"] = false,
+    ["<leader>tO"] = false,
+    ["<leader>tS"] = false,
 
     -- quick sav
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command

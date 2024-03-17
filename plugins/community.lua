@@ -90,4 +90,5 @@ return {
   -- { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   -- { import = "astrocommunity.debugging.persistent-breakpoints-nvim" },
   { import = "astrocommunity.utility.noice-nvim" },
+  { import = "astrocommunity.test.neotest" },
 }
