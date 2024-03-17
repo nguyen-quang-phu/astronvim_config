@@ -43,6 +43,7 @@ return {
   { import = "astrocommunity.pack.full-dadbod" },
   { import = "astrocommunity.pack.php" },
   { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.vue" },
   -- { import = "astrocommunity.pack.ruby" },
 
   { import = "astrocommunity.editing-support.auto-save-nvim" },

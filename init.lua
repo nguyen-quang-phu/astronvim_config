@@ -56,6 +56,7 @@ return {
     servers = {
       "pyright",
       "solargraph",
+      "rubocop",
       "sorbet",
       "tsserver",
       "volar",
@@ -66,6 +67,7 @@ return {
         ["gr"] = false,
         ["gd"] = false,
         ["<leader>la"] = false,
+        ["<leader>ls"] = false,
         ["<leader>ld"] = false,
         ["<leader>lD"] = false,
       },

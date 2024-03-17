@@ -32,6 +32,7 @@ return {
     -- ["<leader>b"] = { name = "Buffers" },
     ["<leader>e"] = { "<cmd>Neotree focus<cr>" },
     ["<leader>ld"] = { ":call AddDebugger()<CR>" },
+    ["<leader>lsf"] = { ":call AddFrozenString()<CR>" },
     ["<leader>lD"] = { ":call ClearDebugger()<CR>" },
     -- ["<leader>b"] = { "<cmd>Neotree toggle<cr>" },
     ["<S-D-f>"] = { "<cmd>Telescope live_grep hidden=true no_ignore=true<cr>" },

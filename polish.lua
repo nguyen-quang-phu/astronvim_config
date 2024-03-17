@@ -34,6 +34,14 @@ return function()
     function TermStrategy(cmd)
       lua require("tmux-awesome-manager").execute_command({ cmd = vim.api.nvim_eval("a:cmd"), name = "Tests...", open_as = 'pane', size = '25%'})
     endfunction
+    function AddFrozenString()
+      let buftype = getbufvar('', '&filetype', 'ERROR')
+      if buftype == "ruby"
+        execute "norm ggO" . g:frozen_string
+        execute "norm x"
+      endif
+    endfunction
+
      function AddDebugger()
       let buftype = getbufvar('', '&filetype', 'ERROR')
 
