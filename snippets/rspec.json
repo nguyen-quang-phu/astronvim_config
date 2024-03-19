@@ -1,0 +1,23 @@
+{
+  "it": {
+    "prefix": ["it"],
+    "body": [
+      "it '$1' do",
+      "\texpect($2).to $3",
+      "end"
+    ],
+    "description": "It"
+  },
+  "desc": {
+    "prefix": ["desc"],
+    "body": [
+      "describe '$1' do",
+      "\tit '$2' do",
+      "\t\texpect($3).to $4",
+      "\tend",
+      "end"
+    ],
+    "description": "Describe"
+  }
+
+}

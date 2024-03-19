@@ -56,10 +56,11 @@ return {
     servers = {
       "pyright",
       "solargraph",
-      "rubocop",
+      -- "rubocop",
       "sorbet",
       "tsserver",
       "volar",
+      -- "erb_lint",
       -- "phpfactor",
     },
     mappings = {
@@ -70,6 +71,7 @@ return {
         ["<leader>ls"] = false,
         ["<leader>ld"] = false,
         ["<leader>lD"] = false,
+        ["<leader>lf"] = false,
       },
     },
   },

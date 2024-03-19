@@ -80,10 +80,14 @@ return {
         end, { "i", "s" }),
       },
       sources = cmp.config.sources {
-        { name = "nvim_lsp", priority = 1000,
+        {
+          name = "nvim_lsp",
+          priority = 1000,
           entry_filter = function(entry)
-            return require("cmp").lsp.CompletionItemKind.Text ~= entry:get_kind()
-          end  },
+            local type = require('cmp.types').lsp.CompletionItemKind[entry:get_kind()]
+            return type ~= 'Text' or type ~= 'Snippet'
+          end
+        },
         { name = "luasnip", priority = 750 },
         { name = "buffer", priority = 500 },
         { name = "path", priority = 250 },
